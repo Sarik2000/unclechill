@@ -1,0 +1,226 @@
+@import "helpers/mixin";
+@import "app/app";
+@import "components/header";
+@import "components/footer";
+@import "components/peculiarities";
+@import "components/price";
+@import "components/vipprice";
+@import "components/company";
+@import "components/masters";
+@import "components/products";
+@import "components/capspa";
+@import "components/friends";
+@import "components/stock";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-image: url("../img/image/bgblack.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  @media screen and (max-width: 1000px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 250px;
+  margin-bottom: 220px;
+  @media screen and (max-width: 1440px) {
+    margin-left: 100px;
+  }
+  @media screen and (max-width: 1300px) {
+    margin-left: 50px;
+  }
+  @media screen and (max-width: 1100px) {
+    margin-left: 30px;
+  }
+  @media screen and (max-width: 480px) {
+    margin-left: -100px;
+  }
+  @media screen and (max-width: 360px) {
+    margin-left: 0px;
+  }
+}
+
+.content-title {
+  font-size: 4.3em;
+  color: var(--c1);
+  font-weight: var(--fwB);
+  @media screen and (max-width: 1000px) {
+    font-size: 4em;
+  }
+  @media screen and (max-width: 800px) {
+    font-size: 3em;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 2.5em;
+  }
+}
+
+.content-title--color {
+  color: var(--c3);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: var(--c3);
+  -webkit-text-stroke-width: 1px;
+}
+
+.bg-black {
+  background-image: url("../img/image/Rectangle\ 9.png");
+  background-size: contain;
+  padding: 20px;
+  // .bg-black__text
+
+  &__text {
+    font-size: 1.5em;
+    color: var(--c3);
+    @media screen and (max-width: 1000px) {
+      font-size: 1.4em;
+    }
+    @media screen and (max-width: 800px) {
+      font-size: 1.2em;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 1em;
+    }
+  }
+}
+
+.button {
+  margin-top: 50px;
+}
+
+.button-btn {
+  padding: 29px 50px 29px 45px;
+  font-size: 1.3em;
+  background-color: var(--c3);
+  border-radius: 5px;
+  border: none;
+  @media screen and (max-width: 1100px) {
+    padding: 15px 30px 15px 30px;
+  }
+  @media screen and (max-width: 800px) {
+    font-size: 1.1em;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 1em;
+  }
+}
+
+.left-images {
+  position: relative;
+  // .left-images__images
+
+  &__images {
+    position: absolute;
+    bottom: -250px;
+    right: -74px;
+    @media screen and (max-width: 1800px) {
+      right: -150px;
+    }
+    @media screen and (max-width: 1600px) {
+      right: -180px;
+    }
+    @media screen and (max-width: 1440px) {
+      right: -150px;
+    }
+    @media screen and (max-width: 1100px) {
+      right: -200px;
+    }
+    @media screen and (max-width: 1000px) {
+      height: 500px;
+      width: 500px;
+      top: -120px;
+      left: -100px;
+    }
+    @media screen and (max-width: 800px) {
+      height: 400px;
+      width: 400px;
+      top: -90px;
+      left: -90px;
+    }
+    @media screen and (max-width: 600px) {
+      height: 400px;
+      width: 280px;
+      top: -90px;
+      left: -90px;
+    }
+    @media screen and (max-width: 360px) {
+      width: calc(var(--offset) * 15.5);
+      height: calc(var(--offset) * 22.5);
+    }
+  }
+}
+
+.right-images {
+  padding: calc(var(--offset) * 1.2);
+  margin-right: 200px;
+  @media screen and (max-width: 1600px) {
+    margin-right: 100px;
+  }
+  @media screen and (max-width: 1440px) {
+    margin-right: 40px;
+  }
+  @media screen and (max-width: 1300px) {
+    margin-right: 10px;
+  }
+  // .right-images__image
+
+  &__image {
+    @media screen and (max-width: 1200px) {
+      height: 550px;
+      width: 550px;
+    }
+    @media screen and (max-width: 1100px) {
+      height: 480px;
+      width: 450px;
+    }
+    @media screen and (max-width: 1000px) {
+      height: 400px;
+      width: 400px;
+    }
+    @media screen and (max-width: 480px) {
+      height: 300px;
+      width: 300px;
+    }
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 2.4em;
+  font-weight: 700;
+  color: var(--c1);
+  @media screen and (max-width: 1600px) {
+    font-size: 2.1em;
+  }
+  @media screen and (max-width: 1300px) {
+    font-size: 1.95em;
+  }
+}

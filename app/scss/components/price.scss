@@ -1,0 +1,295 @@
+.price {
+  background-image: url("../img/image/bgblack.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+}
+
+.row-price {
+  padding-top: var(--cloud-p);
+}
+
+.button-btns {
+  padding-top: 82px;
+  @media screen and (max-width: 480px) {
+    padding-top: 25px;
+  }
+}
+
+.button-btns__btn {
+  padding: 29px 50px 29px 45px;
+  font-size: 1.3em;
+  background-color: var(--c3);
+  border-radius: 5px;
+  border: none;
+  @media screen and (max-width: 1100px) {
+    padding: 13px 30px 13px 30px;
+  }
+  @media screen and (max-width: 360px) {
+    padding: 10px 20px 10px 20px;
+  }
+}
+
+.row-left {
+  margin-top: 190px;
+  min-height: 50vh;
+  // .row-left__img
+
+  &__img {
+    @media screen and (max-width: 1600px) {
+      height: 700px;
+      margin-top: 150px;
+    }
+    @media screen and (max-width: 1440px) {
+      height: 600px;
+      margin-top: 250px;
+    }
+    @media screen and (max-width: 1300px) {
+      height: 500px;
+      margin-top: 250px;
+    }
+    @media screen and (max-width: 1200px) {
+      margin-top: 215px;
+    }
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+  }
+}
+
+.row-right {
+  padding: calc(var(--offset-l) * 3);
+  margin-left: 300px;
+  @media screen and (max-width: 1800px) {
+    margin-left: 200px;
+  }
+  @media screen and (max-width: 1690px) {
+    margin-left: 120px;
+  }
+  @media screen and (max-width: 1600px) {
+    margin-left: 60px;
+  }
+  @media screen and (max-width: 1440px) {
+    margin-left: 10px;
+  }
+  @media screen and (max-width: 1300px) {
+    margin-left: 15px;
+  }
+  @media screen and (max-width: 1000px) {
+    margin-left: 200px;
+    padding: calc(var(--offset-l) * 1.5);
+  }
+  @media screen and (max-width: 900px) {
+    margin-left: 140px;
+  }
+  @media screen and (max-width: 800px) {
+    margin-left: 70px;
+  }
+  @media screen and (max-width: 600px) {
+    margin-left: 0px;
+  }
+  @media screen and (max-width: 480px) {
+    margin-left: -20px;
+  }
+  // .row-right__title
+
+  &__title {
+    font-size: 2.4em;
+    color: var(--c1);
+  }
+}
+
+.row-discount {
+  background-image: url("/img/image/Rectangle\ 9.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  margin-top: 30px;
+  width: 100%;
+  // .row-discount__text
+
+  &__text {
+    color: var(--c3);
+    padding: 20px 27px 37px 27px;
+    font-size: 1.5em;
+    font-weight: var(--fwB);
+    @media screen and (max-width: 480px) {
+      font-size: 1em;
+      padding: 20px 30px;
+    }
+    @media screen and (max-width: 360px) {
+      padding: 10px 10px;
+    }
+  }
+}
+
+.texture {
+  position: relative;
+  margin-top: 40px;
+}
+
+.texture img {
+  @media screen and (max-width: 1300px) {
+    height: 600px;
+  }
+  @media screen and (max-width: 1200px) {
+    height: 530px;
+  }
+  @media screen and (max-width: 1100px) {
+    height: 500px;
+    width: 100%;
+  }
+  @media screen and (max-width: 800px) {
+    height: 480px;
+  }
+  @media screen and (max-width: 600px) {
+    height: 450px;
+  }
+  @media screen and (max-width: 480px) {
+    height: 550px;
+  }
+  @media screen and (max-width: 360px) {
+    height: 500px;
+    width: 300px;
+  }
+}
+
+.table {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+}
+
+.table-title {
+  font-size: 1.4em;
+  color: var(--c2);
+  font-weight: 900;
+}
+
+.table b {
+  font-weight: 900;
+  font-size: 1.3em;
+  @media screen and (max-width: 480px) {
+    font-size: 1.1em;
+  }
+  @media screen and (max-width: 360px) {
+    font-size: 1.1em;
+  }
+}
+
+table tr {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 100px;
+  padding: 20px 70px;
+  @media screen and (max-width: 1100px) {
+    gap: 10px;
+  }
+  @media screen and (max-width: 800px) {
+    padding: 15px 40px;
+  }
+  @media screen and (max-width: 600px) {
+    padding: 15px 20px;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 20px 5px;
+  }
+  @media screen and (max-width: 360px) {
+    padding: 15px 5px;
+    font-size: 0.9em;
+    flex-wrap: wrap;
+  }
+}
+
+.btn {
+  margin-left: 60px;
+  position: absolute;
+  bottom: 100px;
+  @media screen and (max-width: 360px) {
+    margin-left: 90px;
+    bottom: 30px;
+  }
+}
+
+.price-animation {
+  height: 50px;
+  background: var(--c3);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 200%;
+  overflow: hidden;
+  transform: rotate(5.5deg) translate(-50px);
+  @media screen and (max-width: 1300px) {
+    transform: rotate(5.5deg) translate(-50px);
+  }
+  @media screen and (max-width: 1200px) {
+    height: 40px;
+  }
+  @media screen and (max-width: 1000px) {
+    transform: rotate(0.5deg) translate(-50px);
+  }
+  @media screen and (max-width: 800px) {
+    height: 30px;
+  }
+  @media screen and (max-width: 480px) {
+    height: 25px;
+  }
+
+  // .price-animation__subtitle
+
+  &__subtitle {
+    color: var(--c2);
+    font-size: 1.4em;
+    animation-name: animate;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0, 0, 1, 1);
+    animation-iteration-count: infinite;
+    @media screen and (max-width: 1800px) {
+      font-size: 1.3em;
+    }
+    @media screen and (max-width: 1670px) {
+      font-size: 1.2em;
+    }
+    @media screen and (max-width: 1440px) {
+      font-size: 1em;
+    }
+    @media screen and (max-width: 1300px) {
+      font-size: 0.9em;
+    }
+    @media screen and (max-width: 1200px) {
+      font-size: 0.8em;
+    }
+    @media screen and (max-width: 1000px) {
+      font-size: 0.75em;
+      font-weight: 700;
+    }
+    @media screen and (max-width: 900px) {
+      font-size: 0.65em;
+      font-weight: 700;
+    }
+    @media screen and (max-width: 800px) {
+      font-size: 0.6em;
+      font-weight: 700;
+    }
+    @media screen and (max-width: 600px) {
+      font-size: 0.45em;
+      font-weight: 700;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 0.5em;
+      font-weight: 300;
+    }
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX();
+  }
+}

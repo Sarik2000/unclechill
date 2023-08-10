@@ -1,0 +1,138 @@
+.capsule {
+  background-image: url("../img/image/bgblack.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width:1000px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+  }
+}
+
+.capsule-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: calc(var(--offset-l) * 3.5);
+  @media screen and ( max-width:1300px) {
+    padding: 70px;
+  }
+  @media screen and ( max-width:1100px) {
+    padding: 30px;
+  }
+  @media screen and (max-width:360px) {
+    padding: 5px;
+  }
+  // .capsule-left__title
+
+  &__title {
+    font-weight: 800;
+  }
+}
+// .title {
+// }
+.capsule-img {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  // .capsule-img__text
+
+  &__text {
+    position: absolute;
+    color: var(--c3);
+    font-size: 1.5em;
+    font-weight: 400;
+    left: 30px;
+  }
+}
+
+.fitting {
+  position: relative;
+}
+
+.fitting-img {
+  position: relative;
+  @media screen and (max-width:1000px) {
+    height: 300px;
+  }
+  @media screen and (max-width:480px) {
+    width:420px;
+  }
+  @media screen and (max-width:360px) {
+    width: 350px;
+  }
+}
+
+.fitting-title {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  font-size: 1.5em;
+  font-weight: 800;
+}
+
+.fitting-subtitle {
+  position: absolute;
+  top: 130px;
+  left: 60px;
+  font-weight: 300;
+  line-height: 1.2;
+  width: 60%;
+}
+
+.fitting-button {
+  position: relative;
+  // .fitting-button__btn
+
+  &__btn {
+    position: absolute;
+    bottom: 50px;
+    left: 55px;
+    padding: 29px 50px 29px 45px;
+    background: var(--c3);
+    font-weight: 700;
+    font-size: 1.25em;
+    @media screen and (max-width:1100px) {
+      padding: 15px 30px 15px 30px;
+    }
+    @media screen and (max-width:480px) {
+      left: 50px;
+      bottom: 30px;
+    }
+    @media screen and (max-width:480px) {
+      left: 50px;
+      bottom: 10px;
+    }
+  }
+}
+// .capsule-right {
+
+// }
+
+.capsule-right__img{
+  @media screen and (max-width: 1600px) {
+    width: 700px;
+  }
+  @media screen and (max-width: 1300px) {
+    width: 600px;
+  }
+  @media screen and (max-width: 1200px) {
+    width: 550px;
+  }
+  @media screen and (max-width: 1000px) {
+    width: 480px;
+  }
+  @media screen and (max-width: 480px) {
+    width: 420px;
+  }
+  @media screen and (max-width:360px) {
+    width: 370px;
+  }
+}

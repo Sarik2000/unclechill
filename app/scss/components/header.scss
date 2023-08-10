@@ -1,0 +1,134 @@
+.header {
+  padding: calc(var(--hHeader));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  @media screen and (max-width: 1000px) {
+    padding: calc(var(--hHeader) * 0.5);
+  }
+}
+// .active {
+// }
+.header-logo {
+  fill: white;
+}
+
+.logo svg {
+  @media screen and (max-width: 1000px) {
+    height: 25px;
+  }
+  @media screen and (max-width: 800px) {
+    height: 30px;
+    width: 120px;
+  }
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  @media screen and (max-width:800px) {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: calc(var(--offset));
+    width: 100%;
+    z-index: 100;
+    left: 0;
+    bottom: 0;
+    height: calc(var(--offset) * 5.5);
+    background: var(--c2);
+  }
+  // .header-row__list
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    @media screen and (max-width: 1200px) {
+      gap: 60px;
+    }
+    @media screen and (max-width: 1000px) {
+      gap: 30px;
+      font-size: 0.9em;
+    }
+    @media screen and (max-width: 800px) {
+      gap: 25px;
+      font-size: 1em;
+    }
+
+  }
+
+  // .header-row__item
+
+  //   &__item {
+  //   }
+
+  // .header-row__link
+
+  //   &__link {
+  //   }
+
+  // .header-row__svg
+
+  &__svg {
+    fill: var(--c1);
+    @media screen and (max-width: 1000px) {
+      height: 25px;
+    }
+    @media screen and (max-width: 800px) {
+      height: 30px;
+    }
+  }
+
+  // .header-row__svg--yellow
+
+  //   &__svg--yellow {
+  //   }
+
+  // .header-row__svg--brass
+
+  //   &__svg--brass {
+  //   }
+
+  // .header-row__svg--quartz
+
+  //   &__svg--quartz {
+  //   }
+
+  // .header-row__lang
+
+  &__lang {
+    color: var(--c1);
+  }
+}
+
+.header-btn {
+  border-radius: 50%;
+  padding: 10px;
+  background: white;
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 1000px) {
+    padding: 8px;
+  }
+}
+
+.header-btn__svg {
+  fill: black;
+}
+
+.header-number {
+  color: var(--c3);
+  font-size: 1.13em;
+  @media screen and (max-width: 1000px) {
+    font-size: 1.1em;
+  }
+  @media screen and (max-width: 800px) {
+    font-size: 0.9em;
+  }
+}
